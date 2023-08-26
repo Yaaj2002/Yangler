@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5775ec7e3b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Yangler</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="/" class="title"><img src="/input-onlinepngtools.png" alt="yangler"></a>
+      <div id="menu">
+      <a href="#">About</a>
+      <div class="dropdown">
+        <button class="lure-btn">Lures</button>
+        <div class="lure-types">
+          <a href="#">Jerkbaits</a>
+          <a href="#">Crankbaits</a>
+          <a href="#">Top Water</a>
+          <a href="#">Swimbaits</a>
+          <a href="#">Soft Plastics</a>
+          <a href="#">Hooks and Sinkers</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <script>
+    let dropdown = document.querySelector('.dropdown');
+    let dropdownBtn = document.getElementById('dropdown-btn')
+
+    dropdownBtn.addEventListener('click', () => {
+      dropdown.classList.toggle('dropdown-active');
+    });
+  </script>
+</body>
+
+</html>
